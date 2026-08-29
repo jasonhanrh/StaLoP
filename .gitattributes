@@ -1,0 +1,2 @@
+# Store all text artifacts in the repository with canonical LF line endings.
+* text=auto eol=lf
