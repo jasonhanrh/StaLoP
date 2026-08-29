@@ -1,0 +1,157 @@
+{
+  "R": 200,
+  "argv": [
+    "run_experiment1_theory.py",
+    "--R",
+    "200",
+    "--seed0",
+    "20260815",
+    "--n-jobs",
+    "6",
+    "--settings",
+    "representative",
+    "--outdir",
+    "experiment1_theory_R200"
+  ],
+  "dgp_config": {
+    "G": 4,
+    "burnin": 50,
+    "p_switch": 0.35,
+    "regime_mode": "predictable_cycle",
+    "rho_eta": 0.5,
+    "rho_x": 0.6,
+    "sigma_a": 0.0,
+    "sigma_mu": 1.0,
+    "sigma_u": 1.0
+  },
+  "elapsed_sec": 190.25519869997515,
+  "experiment": "Experiment1-theory-v1",
+  "experiment1_core_sha256": "988845e99a96e17131c84174a1917cfeb9085e8ed65a138a45b6c517d0e17237",
+  "grid": {
+    "eta_grid": [
+      1e-06,
+      0.0001,
+      0.001,
+      0.005,
+      0.01,
+      0.025,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      5.0,
+      8.0,
+      12.0,
+      20.0,
+      50.0
+    ],
+    "knn_k_grid": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      40,
+      80,
+      160,
+      320,
+      640,
+      1280
+    ],
+    "q_h_grid": [
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.075,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.65,
+      0.8
+    ],
+    "rank_count_grid": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20
+    ],
+    "rank_fraction_grid": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "time_window_grid": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      40,
+      80,
+      120
+    ]
+  },
+  "method_config": {
+    "K_state": 1,
+    "final_ridge": 0.0,
+    "max_design_condition": 10000.0,
+    "min_bandwidth": 1e-10,
+    "min_noise_pairs": 20,
+    "noise_pair_fraction": 0.5,
+    "require_full_rank_before_ridge": true,
+    "state_ridge": 0.0,
+    "theta_standardize": true,
+    "w_ridge": 1e-08
+  },
+  "numpy": "2.2.6",
+  "pandas": "2.3.1",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "protocol_hash": "49be6b0f6298b70aba2c45ce8c0a114d6153b0addccb217ee04a8fadca2777ed",
+  "python": "3.10.0",
+  "runner_sha256": "b672a0e1ba1038d5d79132a5441e3c2637713a2bdbfc4ec679a1daace9f2fddc",
+  "scipy": "1.15.3",
+  "seed0": 20260815,
+  "settings": [
+    [
+      100,
+      30
+    ],
+    [
+      200,
+      120
+    ]
+  ],
+  "simulation_core_sha256": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038",
+  "target_points": [
+    [
+      -0.5,
+      -0.5
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ]
+}

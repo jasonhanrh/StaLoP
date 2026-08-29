@@ -1,0 +1,48 @@
+{
+  "R": 200,
+  "argv": [
+    "run_experiment1_main.py",
+    "--R",
+    "200",
+    "--seed0",
+    "20260814",
+    "--n-jobs",
+    "6",
+    "--part",
+    "all",
+    "--outdir",
+    "experiment1_main_R200"
+  ],
+  "elapsed_sec": 1631.4742046999745,
+  "experiment1_core_sha256": "988845e99a96e17131c84174a1917cfeb9085e8ed65a138a45b6c517d0e17237",
+  "n_jobs_requested": 6,
+  "numpy": "2.2.6",
+  "pandas": "2.3.1",
+  "part": "all",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.0",
+  "resume": true,
+  "run_mode": "pilot",
+  "runner_sha256": "a9a52d850500f48bbe0d85ed93868d4916349b2ee4f09494d25c8d633f7854ca",
+  "scipy": "1.15.3",
+  "seed0": 20260814,
+  "settings": [
+    [
+      100,
+      30
+    ],
+    [
+      200,
+      30
+    ],
+    [
+      100,
+      120
+    ],
+    [
+      200,
+      120
+    ]
+  ],
+  "simulation_core_sha256": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038"
+}

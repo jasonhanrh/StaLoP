@@ -1,0 +1,7 @@
+sigma_eps,baseline,win_rate,n
+0.1,Global Linear,1.0,200
+0.2,Global Linear,1.0,200
+0.3,Global Linear,1.0,200
+0.1,KNN-Covariate,1.0,200
+0.2,KNN-Covariate,1.0,200
+0.3,KNN-Covariate,1.0,200

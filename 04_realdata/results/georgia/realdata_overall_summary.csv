@@ -1,0 +1,2 @@
+origin_state,n_bins,mean_n_eval,global_mspe_mean,time_mspe_mean,knn_mspe_mean,stalop_mspe_mean,stalop_win_vs_global,stalop_win_vs_time,stalop_win_vs_knn
+Georgia,6,93.5,0.07202366939187066,0.18311182905607412,0.06959494220324089,0.06657645569251171,1.0,1.0,0.8333333333333334

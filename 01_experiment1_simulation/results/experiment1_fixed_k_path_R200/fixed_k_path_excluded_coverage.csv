@@ -1,0 +1,1 @@
+T,N,point_id,x1_star,x2_star,target_regime,K,q_h_ref,eta_ref,h_mean,bias2,variance,true_future_mspe,estimated_mspe,uncorrected_risk,GDF_mean,ESS_mean,n,identity_error,max_n,coverage_fraction,exclusion_reason

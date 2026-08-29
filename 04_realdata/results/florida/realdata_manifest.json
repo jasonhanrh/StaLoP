@@ -1,0 +1,76 @@
+{
+  "origin_state": "Florida",
+  "input_path": "fl_od_binned.csv",
+  "input_sha256": "94103c9531f3d17aaeacf3e2c5bc212542e6f7ab3671e2bf8b02f6abed36fcb4",
+  "config": {
+    "target_bins": [
+      201601,
+      201602,
+      201701,
+      201702,
+      201801,
+      201802
+    ],
+    "active_only": true,
+    "min_eval_edges": 50,
+    "state_window": 6,
+    "q_h_grid": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "eta_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rank_fraction_grid": [
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.7,
+      1.0
+    ],
+    "rank_count_grid": [],
+    "theta_delta": 1e-08,
+    "w_ridge": 1e-08,
+    "state_ridge": 0.0,
+    "final_ridge": 0.0,
+    "min_bandwidth": 1e-10,
+    "max_design_condition": 1000000.0,
+    "noise_pair_fraction": 0.5,
+    "min_noise_pairs": 20,
+    "time_window": 6,
+    "time_min_obs": 3,
+    "knn_validation_bins": 6,
+    "knn_k_grid": [
+      5,
+      10,
+      20,
+      40,
+      80,
+      160,
+      320
+    ],
+    "top_periods": 6,
+    "save_candidate_rows": false
+  },
+  "sources": {
+    "run_realdata_migration.py": "23a986b45a5fdf2cb2b579123dc4ad2463814a69e42f26480a365ba4ec76a138",
+    "realdata_core.py": "139324300ee68da75a656bba777d9f5d40f3008a9e3032d12e249307888c70b4"
+  },
+  "wall_seconds": 51.128940400027204,
+  "data_summary": {
+    "semiannual_rows": 390516,
+    "n_origin_counties": 67,
+    "n_destination_counties": 2213,
+    "n_bins": 40,
+    "first_bin": 200001,
+    "last_bin": 201902,
+    "rows_per_bin_mean": 9762.9,
+    "rows_per_bin_min": 9736,
+    "rows_per_bin_max": 9791
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "bias_variance": "within fixed target-point/target-regime strata; profile h and eta by GDF criterion conditional on K",
+  "compatibility_metric": "percentage of retained panels with the true target regime",
+  "dgp": {
+    "regime_mode": "predictable_cycle",
+    "sigma_a": 0.0,
+    "sigma_u": 1.0
+  },
+  "experiment": "Experiment 1",
+  "main_formal_R": 200,
+  "main_formal_seed0": 20260814,
+  "runner_legacy_formal_preset_R": 300,
+  "main_pilot_seed0": 2026081401,
+  "main_settings": [
+    [
+      100,
+      30
+    ],
+    [
+      200,
+      30
+    ],
+    [
+      100,
+      120
+    ],
+    [
+      200,
+      120
+    ]
+  ],
+  "method": {
+    "K_state": 1
+  },
+  "oracle_compatible": "retain all eligible historical panels with the true target regime; uniform panel weights; tune q_h/h by the same GDF-corrected MSPE criterion",
+  "theory_default_settings": [
+    [
+      100,
+      30
+    ],
+    [
+      200,
+      120
+    ]
+  ],
+  "theory_formal_R": 200,
+  "theory_formal_seed0": 20260815,
+  "theory_pilot_seed0": 2026081501,
+  "theory_target_points": [
+    [
+      -0.5,
+      -0.5
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ]
+}

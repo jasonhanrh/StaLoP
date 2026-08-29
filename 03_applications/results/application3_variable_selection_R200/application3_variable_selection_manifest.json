@@ -1,0 +1,62 @@
+{
+  "application": "variable_selection",
+  "config": {
+    "R": 200,
+    "settings": [
+      [
+        100,
+        30
+      ],
+      [
+        200,
+        30
+      ],
+      [
+        100,
+        120
+      ],
+      [
+        200,
+        120
+      ]
+    ],
+    "seed0": 2026081603,
+    "block_size": 20,
+    "theta_delta": 1e-08,
+    "w_ridge": 1e-08,
+    "max_condition": 10000.0,
+    "sigma2_known": 1.0,
+    "grid": {
+      "q_h_grid": [
+        0.05,
+        0.075,
+        0.1,
+        0.15,
+        0.2,
+        0.3
+      ],
+      "eta_grid": [
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "rank_fraction_grid": [
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    }
+  },
+  "R": 200,
+  "valid_tasks": 800,
+  "wall_seconds": 15664.136759799963,
+  "source_sha256": "002e2b821ed18e7e4a958e8f5c60bb5d3d78e4c786ecf4d94492a200e3ecf99a",
+  "simulation_core_sha256": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038"
+}

@@ -1,0 +1,34 @@
+{
+  "acceptance": "ALL_EXPERIMENT2_ACCEPTANCE_TESTS_PASS",
+  "code_version": "EX2_FINAL_V1_20260816",
+  "formal": {
+    "N": [
+      200,
+      500,
+      1000
+    ],
+    "R": 500,
+    "seed0": 20260816
+  },
+  "implementation_pilot": {
+    "N": [
+      200,
+      500,
+      1000
+    ],
+    "R": 30,
+    "max_rss_kb_time_v": 141464,
+    "seed0": 2026081601,
+    "tasks_total": 90,
+    "tasks_valid": 90,
+    "wall_seconds_runner": 27.452
+  },
+  "source_sha256": {
+    "EXPERIMENT2_PROTOCOL.md": "517c5ab4430ff1f49142917009e9dadf3641015eed4412f0176afb4cd8d7ceba",
+    "QA_REPORT_EXPERIMENT2.md": "f1750149b442adff6b7dd9210e3db3d3ca94526ea7727b1b5a8b773e5937b7d6",
+    "README_EXPERIMENT2.md": "6355db41a705aa0b9efd0a4fdb18214c22ee0ab5986ec434de9eb58b854a92da",
+    "experiment2_core.py": "c8387e265d52e4cfdb7c8fd3e0a0349518865a9b20d0793b1df4572ec20c8c82",
+    "run_experiment2.py": "f01aeaa03d9286869cf2870e7b67e05f5b641f38a75ae21f87a6d58d73477ef2",
+    "test_experiment2_acceptance.py": "a870b6786744690b03fd93c7a08d2b21ff14edcddeec35801a5117c6db9a8610"
+  }
+}

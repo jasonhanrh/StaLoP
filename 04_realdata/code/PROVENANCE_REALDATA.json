@@ -1,0 +1,48 @@
+{
+  "package": "realdata_FINAL",
+  "statistical_contract": "Final StaLoP Algorithm 1 + GDF-corrected joint (K,h,eta) Algorithm 2",
+  "legacy_audit_bundle_sha256": "757d0ecb81daabc5961a28b8b49acb971c1af845616b2d568020a809147c3271",
+  "frozen_experiment1_reference_expected_sha256": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038",
+  "approved_binned_input_sha256": {
+    "Georgia_realdata_edge_bins.csv": "3e58bbec5f4c1450be43a4dde1fbd5868c91170d559ff7a089296d0cb8d34e4b",
+    "Florida_fl_od_binned.csv": "94103c9531f3d17aaeacf3e2c5bc212542e6f7ab3671e2bf8b02f6abed36fcb4",
+    "Texas_tx_od_binned.csv": "7a9d245332081bffd459887d60b74b312e90592033e7fb3ccbc5abe5d4a20651"
+  },
+  "acceptance": "ALL_REALDATA_ACCEPTANCE_TESTS_PASS",
+  "actual_ga_data_audit": {
+    "rows": 237950,
+    "origins": 159,
+    "destinations": 1616,
+    "bins": 40,
+    "n_eval": [
+      86,
+      90,
+      90,
+      93,
+      97,
+      105
+    ],
+    "n_train": [
+      190278,
+      196237,
+      202196,
+      208155,
+      214114,
+      220073
+    ]
+  },
+  "files": {
+    "DATA_PROVENANCE.md": "a7ca9ebabcb713c87427a4286b7ea592fc638375ab8353d3ce57eb3f5caa177c",
+    "QA_REPORT_REALDATA.md": "7365d7527654355213e934c5121327bbe2d183c89dd66c30c48e5e794a3014b9",
+    "README.md": "d4cce6f9930eb04c77129569b2a4d14713ce231243d287666a68733877503dfa",
+    "REALDATA_PROTOCOL.md": "270701e435714e5b8b00ddb49622ef62d017b357a4d1633cabaa6d412930a8a5",
+    "audit_realdata_descriptives.py": "58e7e0d36c9fc952f4a00842ef325339982a1e8cdd946ab3fdeff2129fda216c",
+    "make_realdata_figures.py": "f9c7a2cb63cf6a2b9288aafd33b7f8091efc8ea866add8e2ffda32988b940d39",
+    "realdata_core.py": "139324300ee68da75a656bba777d9f5d40f3008a9e3032d12e249307888c70b4",
+    "requirements.txt": "7d06e18e1f8269cf76ab9124de8dfb81aa2c315bfbd242840da3118b5f338460",
+    "run_realdata_migration.py": "23a986b45a5fdf2cb2b579123dc4ad2463814a69e42f26480a365ba4ec76a138",
+    "run_realdata_multistate.py": "92b68e957d29695cb364e7ab10a460a2e64da871829fdbadc635e01a6ec979d2",
+    "simulation_core_reference.py": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038",
+    "test_realdata_acceptance.py": "1e4c849a268e1cc1781e73fa28a56305dc861c9ea3a3c79032bcd995c9c553f0"
+  }
+}

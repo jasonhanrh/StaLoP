@@ -1,0 +1,64 @@
+{
+  "application": "sine",
+  "config": {
+    "R": 200,
+    "seed0": 2026081601,
+    "amp": 0.75,
+    "noise_sd": 0.1,
+    "dt": 0.01,
+    "t_start": 0.0,
+    "t_end": 1.6,
+    "eval_start": 1.1,
+    "K_state": 7,
+    "predictive_history": 7,
+    "time_window_grid": [
+      5,
+      7,
+      9,
+      11,
+      15,
+      20
+    ],
+    "knn_frac_grid": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "min_train": 20,
+    "max_validation_points": 25,
+    "q_h_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "eta_grid": [
+      1e-06,
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "rank_count_grid": [],
+    "rank_fraction_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "theta_delta": 1e-08,
+    "w_ridge": 1e-08,
+    "max_condition": 10000000000.0
+  },
+  "R": 200,
+  "valid_replications": 200,
+  "wall_seconds": 175.45949929999188,
+  "source_sha256": "def2bddba070fafee44002cca41a8851715308b7edf3073a36bc63793d5fa31c"
+}

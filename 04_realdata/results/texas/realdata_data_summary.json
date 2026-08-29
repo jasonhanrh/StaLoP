@@ -1,0 +1,11 @@
+{
+  "semiannual_rows": 512204,
+  "n_origin_counties": 252,
+  "n_destination_counties": 2387,
+  "n_bins": 40,
+  "first_bin": 200001,
+  "last_bin": 201902,
+  "rows_per_bin_mean": 12805.1,
+  "rows_per_bin_min": 12787,
+  "rows_per_bin_max": 12825
+}

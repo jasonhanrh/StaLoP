@@ -1,0 +1,2 @@
+N,R,runtime_mean_seconds,runtime_sd_seconds,runtime_mcse_seconds,tracked_peak_arrays_mean_MB,tracked_peak_arrays_max_MB
+5000,500,8.211914906799619,0.43351250575146766,0.019387268639131004,146.95655822753906,146.95655822753906

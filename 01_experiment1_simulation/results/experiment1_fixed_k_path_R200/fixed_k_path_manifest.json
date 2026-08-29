@@ -1,0 +1,19 @@
+{
+  "q_h_ref": 0.1,
+  "eta_ref": 1.0,
+  "source_theory_directory": "../experiment1_theory_R200",
+  "checkpoint_files_read": 400,
+  "sha256": {
+    "postprocess_fixed_k_path.py": "bc3d517c9bc7e3be3dc0ef577f7e3cb7da53f3032ca79c85f6b9ad9fb4f52a3c",
+    "simulation_core.py": "08d9df9195003193e6485ebea779c4a71193d61bc8c33bffa36101c054b07038",
+    "experiment1_core.py": "988845e99a96e17131c84174a1917cfeb9085e8ed65a138a45b6c517d0e17237",
+    "run_experiment1_theory.py": "b672a0e1ba1038d5d79132a5441e3c2637713a2bdbfc4ec679a1daace9f2fddc"
+  },
+  "timestamp_utc": "2026-08-16T01:32:05.325257+00:00",
+  "row_counts": {
+    "fixed_k_path_stratum_detail.csv": 324,
+    "fixed_k_path_summary.csv": 27,
+    "fixed_k_path_excluded_coverage.csv": 0
+  },
+  "max_abs_identity_error": 1.0026701691145945e-15
+}
