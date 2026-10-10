@@ -1,2 +1,6 @@
 # Store all text artifacts in the repository with canonical LF line endings.
 * text=auto eol=lf
+
+# The released binned inputs are byte-frozen data artifacts. Preserve their
+# original CRLF bytes so their recorded SHA-256 values remain reproducible.
+04_realdata/data/*.csv -text

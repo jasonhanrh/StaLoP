@@ -1,6 +1,6 @@
 # Final county-to-county migration analysis
 
-This package replaces the legacy real-data StaLoP residual predictor with the final manuscript Algorithms 1--2. It does not contain the large migration data files.
+This package replaces the legacy real-data StaLoP residual predictor with the final manuscript Algorithms 1--2. It includes the three frozen processed binned inputs needed for the formal migration analysis; it does not include the 7.8-GB monthly raw source.
 
 ## 1. Acceptance tests
 
@@ -14,13 +14,13 @@ Required final line:
 ALL_REALDATA_ACCEPTANCE_TESTS_PASS
 ```
 
-## 2. Provide the frozen binned inputs
+## 2. Use the frozen binned inputs
 
-The real-data runners require three external semiannual binned input files, which are not bundled in this code release:
+The three required semiannual binned inputs are bundled in `../data/`:
 
-- Georgia: `realdata_edge_bins.csv`
-- Florida: `fl_od_binned.csv`
-- Texas: `tx_od_binned.csv`
+- Georgia: `../data/realdata_edge_bins.csv`
+- Florida: `../data/fl_od_binned.csv`
+- Texas: `../data/tx_od_binned.csv`
 
 Before running the analysis, verify each file against the approved SHA-256 value recorded in `REALDATA_PROTOCOL.md` and `PROVENANCE_REALDATA.json`.
 
@@ -28,9 +28,9 @@ Before running the analysis, verify each file against the approved SHA-256 value
 
 ```bash
 python run_realdata_multistate.py \
-  --ga "<PATH_TO_GA_BINNED>" \
-  --fl "<PATH_TO_FL_BINNED>" \
-  --tx "<PATH_TO_TX_BINNED>" \
+  --ga ../data/realdata_edge_bins.csv \
+  --fl ../data/fl_od_binned.csv \
+  --tx ../data/tx_od_binned.csv \
   --output-dir realdata_FINAL_results
 ```
 

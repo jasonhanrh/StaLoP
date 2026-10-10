@@ -8,6 +8,23 @@
     "Florida_fl_od_binned.csv": "94103c9531f3d17aaeacf3e2c5bc212542e6f7ab3671e2bf8b02f6abed36fcb4",
     "Texas_tx_od_binned.csv": "7a9d245332081bffd459887d60b74b312e90592033e7fb3ccbc5abe5d4a20651"
   },
+  "release_bundled_binned_inputs": {
+    "04_realdata/data/realdata_edge_bins.csv": {
+      "state": "Georgia",
+      "bytes": 28762241,
+      "sha256": "3e58bbec5f4c1450be43a4dde1fbd5868c91170d559ff7a089296d0cb8d34e4b"
+    },
+    "04_realdata/data/fl_od_binned.csv": {
+      "state": "Florida",
+      "bytes": 47516302,
+      "sha256": "94103c9531f3d17aaeacf3e2c5bc212542e6f7ab3671e2bf8b02f6abed36fcb4"
+    },
+    "04_realdata/data/tx_od_binned.csv": {
+      "state": "Texas",
+      "bytes": 62182264,
+      "sha256": "7a9d245332081bffd459887d60b74b312e90592033e7fb3ccbc5abe5d4a20651"
+    }
+  },
   "acceptance": "ALL_REALDATA_ACCEPTANCE_TESTS_PASS",
   "actual_ga_data_audit": {
     "rows": 237950,
@@ -32,9 +49,9 @@
     ]
   },
   "files": {
-    "DATA_PROVENANCE.md": "a7ca9ebabcb713c87427a4286b7ea592fc638375ab8353d3ce57eb3f5caa177c",
+    "DATA_PROVENANCE.md": "7b91f1fb02de6fd958ca2f31c9df6a9e937fc1461ea0091dbfd0c63fb3f3c965",
     "QA_REPORT_REALDATA.md": "7365d7527654355213e934c5121327bbe2d183c89dd66c30c48e5e794a3014b9",
-    "README.md": "d4cce6f9930eb04c77129569b2a4d14713ce231243d287666a68733877503dfa",
+    "README.md": "f05fde2848778c3eb80224d4ed50d552fdea7872bfcf14998aff8d13537eef78",
     "REALDATA_PROTOCOL.md": "270701e435714e5b8b00ddb49622ef62d017b357a4d1633cabaa6d412930a8a5",
     "audit_realdata_descriptives.py": "58e7e0d36c9fc952f4a00842ef325339982a1e8cdd946ab3fdeff2129fda216c",
     "make_realdata_figures.py": "f9c7a2cb63cf6a2b9288aafd33b7f8091efc8ea866add8e2ffda32988b940d39",
