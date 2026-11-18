@@ -62,7 +62,7 @@ def load_manhattan_zones(data_dir:Path):
     download(ZONE_ZIP,zzip); download(ZONE_LOOKUP,lookup)
     ex=data_dir/'taxi_zones'; ex.mkdir(exist_ok=True)
     with zipfile.ZipFile(zzip) as z: z.extractall(ex)
-    shp=next(ex.glob('*.shp'))
+    shp=next(ex.rglob('*.shp'))
     rdr=shapefile.Reader(str(shp))
     fields=[x[0] for x in rdr.fields[1:]]
     records=[]
