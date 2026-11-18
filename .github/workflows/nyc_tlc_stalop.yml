@@ -1,0 +1,66 @@
+name: NYC TLC StaLoP final candidate
+
+on:
+  push:
+    branches:
+      - nyc-tlc-stalop-20261118
+  workflow_dispatch:
+
+jobs:
+  run-nyc-tlc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      PYTHONHASHSEED: "0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "numpy<3" "pandas<3" scipy joblib pyarrow pyshp shapely
+
+      - name: Frozen core acceptance
+        run: |
+          cd 01_experiment1_simulation/code
+          python test_acceptance.py
+
+      - name: Run NYC TLC application gate
+        run: |
+          python tmp_nyc_tlc/nyc_tlc_stalop_experiment.py --n-jobs 4
+
+      - name: Show final gate
+        if: always()
+        run: |
+          if [ -f tmp_nyc_tlc/results/application_gate_summary.csv ]; then
+            cat tmp_nyc_tlc/results/application_gate_summary.csv
+          fi
+          if [ -f tmp_nyc_tlc/results/application_gate_summary.json ]; then
+            cat tmp_nyc_tlc/results/application_gate_summary.json
+          fi
+
+      - name: Package results
+        if: always()
+        run: |
+          mkdir -p tmp_nyc_tlc/artifact
+          if [ -d tmp_nyc_tlc/results ]; then
+            cp -r tmp_nyc_tlc/results tmp_nyc_tlc/artifact/
+          fi
+          cp tmp_nyc_tlc/nyc_tlc_stalop_experiment.py tmp_nyc_tlc/artifact/
+          git rev-parse HEAD > tmp_nyc_tlc/artifact/GIT_COMMIT.txt
+          find tmp_nyc_tlc/artifact -type f -print0 | sort -z | xargs -0 sha256sum > tmp_nyc_tlc/artifact/SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: NYC_TLC_StaLoP_FINAL_20261118
+          path: tmp_nyc_tlc/artifact
+          retention-days: 7
