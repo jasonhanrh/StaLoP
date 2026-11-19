@@ -3,7 +3,7 @@ name: StaLoP county feasibility audit
 on:
   push:
     branches:
-      - audit-county-feasibility
+      - main
 
 jobs:
   audit:
